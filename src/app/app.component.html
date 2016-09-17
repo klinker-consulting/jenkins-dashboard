@@ -1,17 +1,19 @@
-<md-toolbar>
-    <button md-icon-button (click)="toggleSidenav()">
-        <md-icon class="md-24">menu</md-icon>
-    </button>
-</md-toolbar>
-
-<md-sidenav-layout style="height: 100%">
+<md-sidenav-layout fullscreen>
     <md-sidenav #start mode="over">
-        This is a side nave
+        <md-nav-list>
+            <a md-list-item [routerLink]='["dashboard"]'>Dashboard</a>
+            <a md-list-item [routerLink]='["builds"]'>Builds</a>
+        </md-nav-list>
     </md-sidenav>
 
-    <div>
-        Sidenav content
-    </div>
-</md-sidenav-layout>
+    <md-toolbar color="primary">
+        <button md-icon-button (click)="toggleSidenav()">
+            <md-icon class="md-24">menu</md-icon>
+        </button>
+    </md-toolbar>
 
-<h3>This is stuff</h3>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+</md-sidenav-layout>
