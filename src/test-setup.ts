@@ -17,10 +17,7 @@ import { MockBackend } from '@angular/http/testing';
 import { AppModule } from './app';
 
 @NgModule({
-    imports: [AppModule, BrowserDynamicTestingModule],
-    providers: [
-        { provide: XHRBackend, useClass: MockBackend }
-    ]
+    imports: [AppModule, BrowserDynamicTestingModule]
 })
 class TestModule { }
 

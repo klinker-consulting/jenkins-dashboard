@@ -10,6 +10,11 @@ module.exports = function make(env) {
         devtool: getDevtool(env),
         entry: getEntry(env),
         plugins: getPlugins(env),
+        output: {
+            path: path.join(root_path, 'dist'),
+            filename: 'js/[name].js',
+            sourceMapFilename: '[file].map'
+        },
         resolve: {
             extensions: ['', '.ts', '.js', '.scss', '.css', '.html']
         },
