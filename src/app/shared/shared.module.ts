@@ -1,4 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+
 import { MATERIAL_MODULES, MaterialModule } from './material.module';
 
 @NgModule({
