@@ -1,0 +1,23 @@
+.build-failing {
+  background-color: red;
+
+  .build-title {
+    color: white;
+  }
+}
+
+.build-passing {
+  background-color: green;
+
+  .build-title {
+    color: white;
+  }
+}
+
+.build-in-progress {
+  background-color: lime;
+}
+
+.build-unstable {
+  background-color: yellow;
+}
